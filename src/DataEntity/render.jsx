@@ -30,7 +30,7 @@ export const DataEntityElement = ({
     <>
       {mode === 'view' ? (
         <span {...rest}>
-          {wrapInlineMarkupText(children, (c) => (
+          {wrapInlineMarkupText(children, () => (
             <VisibilitySensor Placeholder={() => <span>&nbsp;</span>}>
               <DataConnectedValue
                 collapsable={withReadmore}
